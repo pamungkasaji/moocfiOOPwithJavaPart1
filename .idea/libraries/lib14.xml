@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="lib14">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/week2-042.Hangman/lib/easymock-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/week2-042.Hangman/lib/powermock-easymock-2.0.2-full.jar!/" />
+      <root url="jar://$PROJECT_DIR$/week2-042.Hangman/lib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/week2-042.Hangman/lib/cglib-nodep-3.2.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/week2-042.Hangman/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/week2-042.Hangman/lib/powermock-classloading-base-2.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/week2-042.Hangman/lib/powermock-module-junit4-rule-2.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/week2-042.Hangman/lib/edu-test-utils-0.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/week2-042.Hangman/lib/objenesis-3.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/week2-042.Hangman/lib/Hangman.jar!/" />
+      <root url="jar://$PROJECT_DIR$/week2-042.Hangman/lib/javassist-3.24.0-GA.jar!/" />
+      <root url="jar://$PROJECT_DIR$/week2-042.Hangman/lib/powermock-classloading-objenesis-2.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
