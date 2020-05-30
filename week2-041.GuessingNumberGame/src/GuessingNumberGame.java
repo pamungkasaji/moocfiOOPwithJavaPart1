@@ -9,7 +9,23 @@ public class GuessingNumberGame {
         int numberDrawn = drawNumber();
 
         // program your solution here. Do not touch the above lines!
-        
+        int guess = 0;
+
+        while (true){
+            System.out.print("Guess a number: ");
+            int input = Integer.parseInt(reader.nextLine());
+
+            guess++;
+
+            if (input == numberDrawn){
+                System.out.println("Congratulations, your guess is correct!");
+                break;
+            } else if (input>numberDrawn){
+                System.out.println("The number is lesser, guesses made: " + guess);
+            } else if (input<numberDrawn){
+                System.out.println("The number is greater, guesses made: " + guess);
+            }
+        }
     }
 
     // DO NOT MODIFY THIS!
