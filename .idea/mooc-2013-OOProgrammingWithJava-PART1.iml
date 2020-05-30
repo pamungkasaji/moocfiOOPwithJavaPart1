@@ -2,8 +2,70 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/week3-043.SumOfNumbers/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-043.SumOfNumbers/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-044.Least/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-044.Least/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-045.Greatest/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-045.Greatest/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-046.AverageOfGivenNumbers/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-046.AverageOfGivenNumbers/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-047.LengthOfName/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-047.LengthOfName/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-048.FirstCharacter/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-048.FirstCharacter/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-049.LastCharacter/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-049.LastCharacter/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-050.SeparatingFirstCharacters/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-050.SeparatingFirstCharacters/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-051.SeparatingCharacters/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-051.SeparatingCharacters/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-052.ReversingName/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-052.ReversingName/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-053.FirstPart/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-053.FirstPart/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-054.TheEndPart/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-054.TheEndPart/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-055.WordInsideWord/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-055.WordInsideWord/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-056.ReversingText/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-056.ReversingText/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-057.Words/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-057.Words/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-058.RecurringWord/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-058.RecurringWord/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-059.WordsInReverseOrder/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-059.WordsInReverseOrder/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-060.WordsInAlphabeticalOrder/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-060.WordsInAlphabeticalOrder/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-061.NumberOfItems/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-061.NumberOfItems/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-062.RemoveLast/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-062.RemoveLast/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-063.SumOfNumbers/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-063.SumOfNumbers/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-064.AverageOfNumbers/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-064.AverageOfNumbers/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-065.LengthsOfStrings/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-065.LengthsOfStrings/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-066.TheGreatest/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-066.TheGreatest/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-067.TheVariance/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-067.TheVariance/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-068.MoreThanOnce/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-068.MoreThanOnce/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-069.Palindrome/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-069.Palindrome/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-070.CombiningArrayLists/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-070.CombiningArrayLists/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-071.SmartCombining/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week3-071.SmartCombining/test" isTestSource="true" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="TEST" name="lib22" level="project" />
+    <orderEntry type="library" scope="TEST" name="lib29" level="project" />
+    <orderEntry type="library" scope="TEST" name="lib24" level="project" />
   </component>
 </module>

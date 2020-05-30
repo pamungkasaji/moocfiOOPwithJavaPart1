@@ -1,0 +1,21 @@
+BINGUNG
+- week 3 070
+
+Week 3
+- method
+- String method (length, isEmpty, indexOf, substring)
+- ArrayList
+    method (add, addAll(combine list), get, size, remove, contains)
+    for-each (for (String print : words){ })
+    ArrayList for method parameter
+    ArrayList<Integer>
+        remove element using numbersList.remove(Integer.valueOf(4));
+        remove index numbersList.remove(4);
+    ArrayList<Double>, ArrayList<Characters>
+    ArrayList as return value
+- collection method (sort, shuffle, reverse)
+    Collection.sort(list)
+    Collections.addAll(list2, 5, 10, 7);
+        A shorthand for list2.add(5);
+- boolean
+    data type, return type
