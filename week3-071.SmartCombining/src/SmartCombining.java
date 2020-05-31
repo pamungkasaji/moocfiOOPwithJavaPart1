@@ -5,9 +5,9 @@ import java.util.Collections;
 public class SmartCombining {
 
     public static void smartCombine(ArrayList<Integer> first, ArrayList<Integer> second) {
-        for (int an : second){
-            if(!first.contains(an)){
-                first.add(an);
+        for (int a : second){
+            if(!first.contains(a)){
+                first.add(a);
             }
         }
     }

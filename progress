@@ -1,11 +1,9 @@
-BINGUNG
-- week 3 070
-
 Week 3
 - method
 - String method (length, isEmpty, indexOf, substring)
 - ArrayList
-    method (add, addAll(combine list), get, size, remove, contains)
+    method (add, addAll(combine list), get, size, contains, remove, clear)
+        remove and contains assume that the objects stored in the ArrayList have an equals method
     for-each (for (String print : words){ })
     ArrayList for method parameter
     ArrayList<Integer>
@@ -19,3 +17,24 @@ Week 3
         A shorthand for list2.add(5);
 - boolean
     data type, return type
+
+Week 4 ( + 70, 71)
+- Methods and copying parameters (70, 71)
+    primitive data types (int, double, char, boolean) get copied to method
+    ArrayList and many other type, only the references are copied to the method
+- OOP Object class
+    custom object as parameter
+    constructor
+    modifi object variable, The state of an object is independent of the other objects!
+    getter, setter
+    toString
+        System.out.println( andy );
+            Java completes the call during runtime to the format:
+            System.out.println( andy.toString() );
+- String.format( "%.2f", value ), double decimal
+- Build a clock (interesting project)
+- Random class
+    nextInt, nextDouble
+- toString
+- explicit type conversion. avg = (double)sum/count
+- tips, assign object variable in constructor

@@ -1,32 +1,35 @@
-
 public class NumberStatistics {
-
-    private int amountofNumbers;
+    private int amountOfNumbers;
     private int sum;
 
     public NumberStatistics() {
-        this.amountofNumbers = 0;
-        this.sum = 0;
+        // initialize here the object variable amountOfNumbers
+        amountOfNumbers = 0;
+        sum = 0;
     }
 
     public void addNumber(int number) {
-        this.amountofNumbers++;
-        this.sum += number;
+        // code here
+        amountOfNumbers ++;
+        sum += number;
     }
 
     public int amountOfNumbers() {
-        return this.amountofNumbers;
+        // code here
+        return amountOfNumbers;
     }
 
     public int sum() {
-        return this.sum;
+        // code here
+        return sum;
     }
 
     public double average() {
-        if (this.amountofNumbers == 0) {
+        // code here
+        if (amountOfNumbers == 0){
             return 0;
         } else {
-            return (double) this.sum / this.amountofNumbers;
+            return (double) sum / amountOfNumbers;
         }
     }
 }

@@ -23,12 +23,12 @@ public class CombiningArrayLists {
 
 //        Choose combine or concat
 
-//        combine(list1, list2);
-//        System.out.println(list1);
-//        System.out.println(list2);
-
-        System.out.println(concat(list1, list2));
+        combine(list1, list2);
+        System.out.println(list1);
         System.out.println(list2);
+
+//        System.out.println(concat(list1, list2));
+//        System.out.println(list2);
     }
     
     public static void combine(ArrayList<Integer> list1,  ArrayList<Integer> list2){

@@ -17,6 +17,6 @@ public class Product {
     }
 
     public void printProduct() {
-        System.out.println(this.nameAtStart + "," + " price " + this.priceAtStart + "," + " amount " + this.amountAtStart);
+        System.out.println(nameAtStart + "," + " price " + priceAtStart + "," + " amount " + amountAtStart);
     }
 }

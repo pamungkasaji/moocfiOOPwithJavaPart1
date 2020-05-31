@@ -12,7 +12,7 @@ public class Multiplier {
         this.number = number;
     }
 
-    public int multiply(int otherNumber) {
+    public int multiply(int otherNumber){
         number *= otherNumber;
         return number;
     }

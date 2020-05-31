@@ -1,4 +1,3 @@
-
 public class HangmanLogic {
 
     private String word;
@@ -25,40 +24,35 @@ public class HangmanLogic {
 
     public void guessLetter(String letter) {
         // program here the functionality for making a guess
-        if(guessedLetters.contains(letter)){
-            
-        } else if (word.contains(letter)){
-            guessedLetters += letter;
-        }else{
-            numberOfFaults++;
-            guessedLetters += letter;
-        }
-
         // if the letter has already been guessed, nothing happens
-        // it the word does not contains the guessed letter, number of faults increase
+        // it the word does not contains the guessed letter, the number of faults increases
         // the letter is added among the already guessed letters
+
+        if (!guessedLetters.contains(letter)){
+            if(word.contains(letter)){
+                guessedLetters += letter;
+            } else {
+                numberOfFaults++;
+                guessedLetters += letter;
+            }
+        }
     }
 
     public String hiddenWord() {
         // program here the functionality for building the hidden word
+        // create the hidden word by iterating through this.word letter by letter
+        // if the letter in turn is within the guessed words, put it in the hidden word
+        // if the letter is not among the guessed ones, replace it with _ in the hidden word
 
-        // create the hidden word by interating through this.word letter by letter
-        // if the letter in turn is within the guessed words, put it in to the hidden word
-        // if the letter is not among guessed, replace it with _ in the hidden word 
-        // return the hidden word at the end
-        String hiddenWord = "";
-        int i = 0;
-        String guessLetter = "";
-        while (i < this.word.length()) {
-            char guess = this.word.charAt(i);
-            guessLetter = Character.toString(guess);
-            if (this.guessedLetters.contains(guessLetter)) {
-                hiddenWord += guessLetter;
+        String hidden = "";
+        for(int i = 0; i < word.length(); i++){
+            char c = word.charAt(i);
+            if (guessedLetters.indexOf(c) != -1){ //check if char is in String, -1 if it isn't
+                hidden = hidden + c;
             } else {
-                hiddenWord += "_";
+                hidden = hidden + "_";
             }
-            i++;
         }
-        return hiddenWord;
+        return hidden;
     }
 }

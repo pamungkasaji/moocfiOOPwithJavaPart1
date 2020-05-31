@@ -1,27 +1,25 @@
-
-import java.util.Scanner;
-
 public class Main {
-
     public static void main(String[] args) {
-        LyyraCard Pekka = new LyyraCard(20);
-        LyyraCard Brian = new LyyraCard(30);
+        LyyraCard cardPekka = new LyyraCard(20);
+        LyyraCard cardBrian = new LyyraCard(30);
 
-        Pekka.payGourmet();
-        System.out.println("Pekka: " + Pekka);
-        Brian.payEconomical();
-        System.out.println("Brian: " + Brian);
+        cardPekka.payGourmet();
+        cardBrian.payEconomical();
 
-        Pekka.loadMoney(20.00);
-        System.out.println("Pekka: " + Pekka);
-        Brian.payGourmet();
-        System.out.println("Brian: " + Brian);
+        System.out.println("Pekka: " + cardPekka);
+        System.out.println("Brian: " + cardBrian);
 
-        Pekka.payEconomical();
-        Pekka.payEconomical();
-        System.out.println("Pekka: " + Pekka);
-        Brian.loadMoney(50);
-        System.out.println("Brian: " + Brian);
+        cardPekka.loadMoney(20);
+        cardBrian.payGourmet();
 
+        System.out.println("Pekka: " + cardPekka);
+        System.out.println("Brian: " + cardBrian);
+
+        cardPekka.payEconomical();
+        cardPekka.payEconomical();
+
+        cardBrian.loadMoney(50);
+        System.out.println("Pekka: " + cardPekka);
+        System.out.println("Brian: " + cardBrian);
     }
 }

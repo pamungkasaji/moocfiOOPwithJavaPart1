@@ -1,18 +1,17 @@
-
 import java.util.Random;
 
 public class Dice {
-
-    private Random random = new Random();
+    private Random random;
     private int numberOfSides;
 
-    public Dice(int numberOfSides) {
+    public Dice(int numberOfSides){
         this.numberOfSides = numberOfSides;
+        random = new Random();
+
     }
 
     public int roll() {
-        // create here a random number belongig to range 1-numberOfSided
-        return random.nextInt(this.numberOfSides) + 1;
-        // (int max - int min + 1) + int min
+        // we'll get a random number in the range 1-numberOfSides<
+        return random.nextInt(numberOfSides) + 1;
     }
 }
