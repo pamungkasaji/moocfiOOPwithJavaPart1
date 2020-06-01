@@ -1,47 +1,41 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
-        ArrayList<Student> list = new ArrayList<Student>();
-        Scanner reader = new Scanner(System.in);
-        String studentName = "";
-        String studentNumber = "";
-        String searchTerm = "";
 
-        while (true) {
-            System.out.println("name:");
-            studentName = reader.nextLine();
-            if (studentName.isEmpty()) {
+        Scanner reader = new Scanner(System.in);
+        String name = "";
+        String studentNumber = "";
+        ArrayList<Student> students = new ArrayList<>();
+
+        while (true){
+            System.out.print("name: ");
+            name = reader.nextLine();
+
+            if (name.isEmpty()){
                 break;
             }
 
-            System.out.println("studentnumber:");
+            System.out.print("studentnumber: ");
             studentNumber = reader.nextLine();
 
-            list.add(new Student(studentName, studentNumber));
-        }
-
-        for (Student students : list) {
-            System.out.println(students);
+            students.add(new Student(name, studentNumber));
         }
 
         System.out.println("");
-        System.out.println("Give search term: ");
-        searchTerm = reader.nextLine();
-        System.out.println("");
+        for (Student student : students){
+            System.out.println(student);
+        }
+
+        System.out.print("Give search term: ");
+        String term = reader.nextLine();
         System.out.println("Result: ");
-
-        int i = 0;
-        while (i < list.size()) {
-            Student nameToSearch = list.get(i); //get the student object
-            String strNameToSearch = nameToSearch.getName(); //gets the student name from the student object
-            if (strNameToSearch.contains(searchTerm)) {
-                System.out.println(nameToSearch);
+        for (Student student : students){
+            if (student.getName().contains(term)){
+                System.out.println(student);
             }
-            i++;
         }
     }
 }
+  

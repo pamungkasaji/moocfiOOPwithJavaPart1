@@ -1,6 +1,4 @@
-
 public class MyDate {
-
     private int day;
     private int month;
     private int year;
@@ -16,47 +14,47 @@ public class MyDate {
     }
 
     public boolean earlier(MyDate compared) {
-        if (this.year < compared.year) {
+        // first we'll compare years
+        if ( this.year < compared.year ) {
             return true;
         }
 
-        if (this.year == compared.year && this.month < compared.month) {
+        // if the years are the same, we'll compare the months
+        if ( this.year == compared.year && this.month < compared.month ) {
             return true;
         }
 
-        if (this.year == compared.year && this.month == compared.month
-                && this.day < compared.day) {
-            return true;
-        }
-
-        return false;
+        // years and months the same, we'll compare the days
+        return this.year == compared.year && this.month == compared.month &&
+                this.day < compared.day;
     }
 
-    //advances the day by one. if the day crosses 30, advances the month by 1,
-    //if month crosses by 12, year advances by 1.
-    public void advance() {
-        this.day++;
-        if (this.day > 30) {
-            this.day = 1;
-            this.month++;
-            if (this.month > 12) {
-                this.year++;
-                this.month = 1;
+    public void advance (){
+        if (day != 30){
+            day ++;
+        } else {
+            if (month != 12){
+                day = 1;
+                month ++;
+            } else {
+                day = 1;
+                month = 1;
+                year ++;
             }
         }
     }
 
     public void advance(int numberOfDays) {
-        int i = 0;
-        while (i < numberOfDays) {
+        for(int i = 0; i < numberOfDays; i++){
             advance();
-            i++;
         }
     }
 
     public MyDate afterNumberOfDays(int days) {
         MyDate newMyDate = new MyDate(this.day, this.month, this.year);
+
         newMyDate.advance(days);
+
         return newMyDate;
     }
 }

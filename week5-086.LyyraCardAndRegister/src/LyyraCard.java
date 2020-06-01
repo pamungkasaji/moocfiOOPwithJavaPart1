@@ -1,4 +1,3 @@
-
 public class LyyraCard {
 
     private double balance;
@@ -15,15 +14,16 @@ public class LyyraCard {
         this.balance += amount;
     }
 
-    public boolean pay(double amount) {
-        // method checks if the balance of the card is at least amount given as parameter
-        // if not, methods returns false meaning that the card could not be used for the payment
+    public boolean pay(double amount){
+        // the method checks if the balance of the card is at least the amount given as parameter
+        // if not, the method returns false meaning that the card could not be used for the payment
         // if the balance is enough, the given amount is taken from the balance and true is returned
-        if (this.balance >= amount) {
-            this.balance -= amount;
+        if(balance >= amount){
+            balance -= amount;
             return true;
         } else {
             return false;
         }
     }
 }
+  

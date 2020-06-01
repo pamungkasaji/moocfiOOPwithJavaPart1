@@ -33,16 +33,49 @@ public class MyDate {
     }
 
     public int differenceInYears(MyDate comparedDate) {
-        double yearDiff = 0.00;
-        if (this.year > comparedDate.year) {
-            yearDiff = (this.year + (double) this.month / 12 + (double) this.day / 365)
-                    - (comparedDate.year + (double) comparedDate.month / 12
-                    + (double) comparedDate.day / 365);
-        } else {
-            yearDiff = (comparedDate.year + (double) comparedDate.month / 12
-                    + (double) comparedDate.day / 365)
+        double diff = 0;
+
+        // check if this object date is earlier than compared date
+        if (this.earlier(comparedDate)){
+            // convert month and day to year
+            diff = (comparedDate.year + (double) comparedDate.month / 12 + (double) comparedDate.day / 365)
                     - (this.year + (double) this.month / 12 + (double) this.day / 365);
+        } else {
+            diff = (this.year + (double) this.month / 12 + (double) this.day / 365)
+                    - (comparedDate.year + (double) comparedDate.month / 12 + (double) comparedDate.day / 365);
         }
-        return (int) yearDiff;
+
+        return (int) diff;
+    }
+
+    // dibawah tidak digunakan di exercise ini
+
+    public void advance (){
+        if (day != 30){
+            day ++;
+        } else {
+            if (month != 12){
+                day = 1;
+                month ++;
+            } else {
+                day = 1;
+                month = 1;
+                year ++;
+            }
+        }
+    }
+
+    public void advance(int numberOfDays) {
+        for(int i = 0; i < numberOfDays; i++){
+            advance();
+        }
+    }
+
+    public MyDate afterNumberOfDays(int days) {
+        MyDate newMyDate = new MyDate(this.day, this.month, this.year);
+
+        newMyDate.advance(days);
+
+        return newMyDate;
     }
 }

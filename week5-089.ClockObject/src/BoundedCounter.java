@@ -1,36 +1,38 @@
-
 public class BoundedCounter {
-
     private int value;
     private int upperLimit;
 
-    public BoundedCounter(int upper) {
-        this.upperLimit = upper;
-        this.value = 0;
+    public BoundedCounter(int upperLimit) {
+        // write code here
+        value = 0;
+        this.upperLimit = upperLimit;
     }
 
     public void next() {
-        this.value++;
-        if (this.value > this.upperLimit) {
-            this.value = 0;
+        // write code here
+        value ++;
+        if (value > upperLimit) {
+            value = 0;
         }
     }
 
     public String toString() {
-        if (this.value < 10) {
-            return "0" + this.value;
+        // write code here
+        if (value < 10){
+            return "0"+value;
         } else {
-            return "" + this.value;
+            return ""+value;
         }
     }
 
     public int getValue() {
-        return this.value;
+        // write here code that returns the value
+        return value;
     }
 
-    public void setValue(int newValue) {
-        if (newValue > 0 && newValue <= this.upperLimit) {
-            this.value = newValue;
+    public void setValue(int value){
+        if (value >= 0 && value <= upperLimit ){
+            this.value = value;
         }
     }
 }

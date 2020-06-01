@@ -38,3 +38,22 @@ Week 4 ( + 70, 71)
 - toString
 - explicit type conversion. avg = (double)sum/count
 - tips, assign object variable in constructor
+
+Week 5
+- Multiple constructors / constructor overloading, different parameter
+    Calling another constructor in the same class
+        { this(name, 0); }
+- Method overloading, different parameter
+- Object is at the end of a wire, just like ArrayList
+    copy a variable that refers to an object
+- NullPointerException
+- Custom object as parameter
+- Exercise 86: Lyyra card and Cash Register. Very helpful
+- The date as an object
+- Comparing 2 object
+- Objects on a list, ArrayList
+- Object as another object variable (Example : person object has birth date object)
+- A list of objects within an object,
+    private ArrayList<Person> members;
+- Method returns an object
+- Comparing date using custom MyDate object

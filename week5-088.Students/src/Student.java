@@ -5,24 +5,24 @@
  */
 
 public class Student {
-
-    private String studentName;
+    private String name;
     private String studentNumber;
 
     public Student(String name, String studentNumber) {
-        this.studentName = name;
+        this.name = name;
         this.studentNumber = studentNumber;
     }
 
     public String getName() {
-        return this.studentName;
+        return name;
     }
 
     public String getStudentNumber() {
-        return this.studentNumber;
+        return studentNumber;
     }
 
+    @Override
     public String toString() {
-        return this.studentName + " (" + this.studentNumber + ")";
+        return this.name + " (" + this.studentNumber + ")";
     }
 }

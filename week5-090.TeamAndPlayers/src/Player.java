@@ -1,17 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 public class Player {
+    private String name;
+    private int goal;
 
-    private String playerName;
-    private int goalsScored;
-
-    public Player(String name, int goals) {
-        this.playerName = name;
-        this.goalsScored = goals;
+    public Player(String name, int goal) {
+        this.name = name;
+        this.goal = goal;
     }
 
     public Player(String name) {
@@ -19,14 +12,14 @@ public class Player {
     }
 
     public String getName() {
-        return this.playerName;
+        return name;
     }
 
     public int goals() {
-        return this.goalsScored;
+        return goal;
     }
 
     public String toString() {
-        return "Player: " + this.getName() + "," + " goals " + this.goals();
+        return name + ", goals " + goal;
     }
 }
