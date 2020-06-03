@@ -7,46 +7,49 @@ import java.util.Random;
  * and open the template in the editor.
  */
 public class NightSky {
+    private double density;
+    private int width;
+    private int height;
+    private int starsInLastPrint;
 
-    private final int width;
-    private final int height;
-    private final double density;
-    private int starsInLastPrint = 0;
-
-    public NightSky(double density) {
-        this(density, 20, 10);
+    public NightSky(double density, int width, int height) {
+        this.density = density;
+        this.width = width;
+        this.height = height;
+        starsInLastPrint = 0;
     }
 
     public NightSky(int width, int height) {
         this(0.1, width, height);
     }
 
-    public NightSky(double density, int width, int height) {
-        this.density = density;
-        this.height = height;
-        this.width = width;
+    public NightSky(double density) {
+        this(density, 20, 10);
     }
 
-    public void printLine() {
-        Random rand = new Random();
-        String toPrint = "";
-        for (int i = 0; i < this.width; i++) {
-            if (rand.nextDouble() <= this.density) {
-                toPrint += "*";
-                starsInLastPrint++;
+    public void add() {
+        this.height ++;
+    }
+
+    public void  printLine() {
+        Random random = new Random();
+        for (int i=0; i<width; i++){
+            double starProb = random.nextDouble();
+            if (starProb <= density){
+                System.out.print("*");
+                starsInLastPrint ++;
             } else {
-                toPrint += " ";
+                System.out.print(" ");
             }
         }
-        System.out.print(toPrint);
     }
 
     public void print() {
         starsInLastPrint = 0;
-        for (int i = 0; i < this.height; i++) {
+        for (int i=0; i<height; i++){
             printLine();
+            System.out.println();
         }
-        System.out.println("");
     }
 
     public int starsInLastPrint() {

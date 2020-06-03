@@ -5,10 +5,9 @@
  */
 
 public class Book {
-
-    private final String title;
-    private final String publisher;
-    private final int year;
+    private String title;
+    private String publisher;
+    private int year;
 
     public Book(String title, String publisher, int year) {
         this.title = title;
@@ -17,18 +16,18 @@ public class Book {
     }
 
     public String title() {
-        return this.title;
+        return title;
     }
 
     public String publisher() {
-        return this.publisher;
+        return publisher;
     }
 
     public int year() {
-        return this.year;
+        return year;
     }
 
     public String toString() {
-        return (this.title + ", " + this.publisher + ", " + Integer.toString(this.year));
+        return title + ", " + publisher + ", " + year;
     }
 }

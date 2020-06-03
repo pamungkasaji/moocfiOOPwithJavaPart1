@@ -15,18 +15,18 @@ public class Person {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public String getNumber() {
-        return this.number;
-    }
-
-    public void changeNumber(String newNumber) {
-        this.number = newNumber;
+        return number;
     }
 
     public String toString() {
-        return this.getName() + " number: " + this.getNumber();
+        return name + " number: " + number;
+    }
+
+    public void changeNumber(String number) {
+        this.number = number;
     }
 }

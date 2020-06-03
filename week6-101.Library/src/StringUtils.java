@@ -5,12 +5,10 @@
  */
 
 public class StringUtils {
-
     public static boolean included(String word, String searched) {
-        if (word.toLowerCase().contains(searched.toLowerCase().trim())) {
+        if (word.trim().toLowerCase().contains(searched.trim().toLowerCase())){
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 }

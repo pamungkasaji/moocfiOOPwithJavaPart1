@@ -6,35 +6,29 @@
 
 public class Bird {
 
-    private final String birdName;
-    private final String latinName;
-    private int count;
+    private String name;
+    private String latinName;
+    private int observedCount;
 
-    public Bird(String name, String latin) {
-        this.birdName = name;
-        this.latinName = latin;
-        this.count = count;
+    public Bird(String name, String latinName) {
+        this.name = name;
+        this.latinName = latinName;
+        this.observedCount = 0;
     }
 
     public String getName() {
-        return this.birdName;
+        return name;
     }
 
-    public String getlatinName() {
-        return this.latinName;
+    public String getLatinName() {
+        return latinName;
     }
 
-    /*public int getCount(){
-     return this.count;
-     }*/
-    
-    public void increaseCount() {
-        count++;
+    public int getObservedCount() {
+        return observedCount;
     }
 
-    @Override
-    public String toString() {
-        return this.birdName + " (" + this.latinName + "): "
-                + this.count + " observations";
+    public void addObserved() {
+        observedCount++;
     }
 }

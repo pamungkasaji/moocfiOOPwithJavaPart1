@@ -1,4 +1,8 @@
 
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 /*
@@ -8,39 +12,36 @@ import java.util.Scanner;
  */
 public class Grade {
 
-    String grade0 = "";
-    String grade1 = "";
-    String grade2 = "";
-    String grade3 = "";
-    String grade4 = "";
-    String grade5 = "";
+    String grade0 = "", grade1 = "", grade2 = "", grade3 = "", grade4 = "", grade5 = "";
 
-    int sum;
-    double acrate;
+    public void doSpomething(Scanner scanner){
 
-    public void doSomething(Scanner scanner) {
-        while (true) {
-            int a = Integer.parseInt(scanner.nextLine());
-            if (a == -1) {
+        while (true){
+            int score = Integer.parseInt(scanner.nextLine());
+            if (score == -1){
                 break;
-            } else if (a >= 0 && a <= 29) {
+            }
+            if (score >= 0 && score <= 29){
                 grade0 += "*";
-            } else if (a >= 30 && a <= 34) {
+            }else if (score >= 30 && score <= 34){
                 grade1 += "*";
-            } else if (a >= 35 && a <= 39) {
+            }else if (score >= 35 && score <= 39){
                 grade2 += "*";
-            } else if (a >= 40 && a <= 44) {
+            }else if (score >= 40 && score <= 44){
                 grade3 += "*";
-            } else if (a >= 45 && a <= 49) {
+            }else if (score >= 45 && score <= 49){
                 grade4 += "*";
-            } else if (a >= 50 && a <= 60) {
+            }else if (score >= 50 && score <= 60){
                 grade5 += "*";
             }
         }
+
+        //Collections.addAll(scores, grade0, grade1, grade2, grade3, grade4, grade5);
+        //scores.addAll(Arrays.asList(score0, score1, score2, score3, score4, score5));
     }
 
-    public void printStars() {
-        System.out.println("Grade distribution:");
+    public void print() {
+        System.out.println("Grade Distribution:");
         System.out.println("5: " + grade5);
         System.out.println("4: " + grade4);
         System.out.println("3: " + grade3);
@@ -49,20 +50,14 @@ public class Grade {
         System.out.println("0: " + grade0);
     }
 
-    public void sum() {
-        //Calculate acceptance rate
-        sum = grade1.length() + grade2.length()
-                + grade3.length() + grade4.length()
-                + grade5.length() + grade0.length();
+    public int sum() {
+        return grade0.length() + grade1.length() + grade2.length() + grade3.length()
+                + grade4.length() + grade5.length();
     }
 
     public void printAcceptance() {
-        sum();
-        if (sum == 0) {
-            acrate = 0.0;
-        } else {
-            acrate = (sum - grade0.length()) * 100 / sum;
-        }
-        System.out.println("Acceptance percentage: " + acrate);
+        double percnt = (double) 100 * (grade1.length() + grade2.length() + grade3.length()
+                + grade4.length() + grade5.length()) / sum();
+        System.out.println("Acceptance percentage: " + percnt);
     }
 }

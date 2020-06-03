@@ -1,20 +1,20 @@
 public class BinarySearch {
     public static boolean search(int[] array, int searchedValue) {
-        int beginning = 0;
-        int end = array.length - 1;
+        int lowerLimit = 0;
+        int upperLimit = array.length - 1;
+        boolean found = false;
 
-        while (beginning <= end) {
-            int middle = (beginning + end) / 2;
-            if (array[middle] == searchedValue) {
-                return true;
-            }
-            if (array[middle] < searchedValue){
-                beginning = middle + 1;
-            }
-            if (array[middle] > searchedValue){
-                end = middle - 1;
+        while (lowerLimit <= upperLimit) {
+            int mid = (lowerLimit + upperLimit) / 2;
+            if (array[mid] < searchedValue) {
+                lowerLimit = mid + 1;
+            } else {
+                upperLimit = mid - 1;
             }
         }
-        return false;
+        if (array[lowerLimit] == searchedValue){
+            found = true;
+        }
+        return found;
     }
 }

@@ -8,62 +8,46 @@ public class Main {
         sort(values);
     }
 
-    public static int smallest(int[] test) {
-        int small = test[0];
-        for (int i = 0; i < test.length; i++) {
-            if (small <= test[i]) {
-                //small = small;
-            } else {
-                small = test[i];
+    public static int smallest(int[] array) {
+        int smallest = array[0];
+        for (int i=0; i<array.length - 1; i++){
+            if (array[i+1] < smallest){
+                smallest = array[i+1];
             }
         }
-        return small;
+        return smallest;
     }
 
-    public static int indexOfTheSmallest(int[] test) {
-        // code goes here
-        int index = 0;
-        int small = test[0];
-        for (int i = 0; i < test.length; i++) {
-            if (small <= test[i]) {
-
-            } else {
-                small = test[i];
-                index = i;
+    public static int indexOfTheSmallest(int[] array) {
+        int indexSmallest = 0;
+        for (int i=0; i<array.length - 1; i++){
+            if (array[i+1] < array[indexSmallest]){
+                indexSmallest = i+1;
             }
         }
-        return index;
+        return indexSmallest;
     }
 
-    public static int indexOfTheSmallestStartingFrom(int[] test, int index) {
-        int small = test[index];
-        for (int i = index; i < test.length; i++) {
-            if (small <= test[i]) {
-
-            } else {
-                small = test[i];
-                index = i;
+    public static int indexOfTheSmallestStartingFrom(int[] array, int index) {
+        int indexSmallest = index;
+        for (int i=index; i<array.length - 1; i++){
+            if (array[i+1] < array[indexSmallest]){
+                indexSmallest = i+1;
             }
         }
-        return index;
+        return indexSmallest;
     }
 
     public static void swap(int[] array, int index1, int index2) {
-        int swap1;
-        int swap2;
-
-        swap1 = array[index2];
-        swap2 = array[index1];
-
-        array[index1] = swap1;
-        array[index2] = swap2;
+        int temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
     }
 
     public static void sort(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(Arrays.toString(array));
-            int smallestIndex = indexOfTheSmallestStartingFrom(array, i);
-            swap(array, i, smallestIndex);
+        for (int i=0; i<array.length; i++){
+            System.out.println( Arrays.toString(array) );
+            swap(array, i, indexOfTheSmallestStartingFrom(array, i));
         }
     }
 }

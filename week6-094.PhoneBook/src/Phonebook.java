@@ -9,22 +9,26 @@ import java.util.Iterator;
 
 public class Phonebook {
 
-    private ArrayList<Person> phoneBook = new ArrayList<Person>();
+    private ArrayList<Person> people;
+
+    public Phonebook() {
+        people = new ArrayList<>();
+    }
 
     public void add(String name, String number) {
         Person person = new Person(name, number);
-        this.phoneBook.add(person);
+        people.add(person);
     }
 
     public void printAll() {
-        for (Person person : this.phoneBook) {
-            System.out.println(person);
+        for (Person person : people){
+            System.out.println(person.getName() + " number: " + person.getNumber());
         }
     }
 
-    public String searchNumber(String name) {
-        for (Person person : this.phoneBook) {
-            if (person.getName().equals(name)) {
+    public String searchNumber (String name) {
+        for (Person person : people){
+            if (person.getName().equals(name)){
                 return person.getNumber();
             }
         }

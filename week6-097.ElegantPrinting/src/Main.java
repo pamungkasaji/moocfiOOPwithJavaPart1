@@ -10,9 +10,12 @@ public class Main {
     // print the first 4 numbers and comma together then print the last number 
     //separately
     public static void printElegantly(int[] array) {
-        for (int i = 0; i < array.length - 1; i++) {
-            System.out.print(array[i] + ", ");
+        for (int i = 0; i < array.length; i++) {
+            if (i == array.length - 1){
+                System.out.print(array[i]);
+            } else {
+                System.out.print(array[i] + ", ");
+            }
         }
-        System.out.print(array[array.length - 1]);
     }
 }

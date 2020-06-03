@@ -1,3 +1,8 @@
+Sulit / belum paham :
+- Exercise 95 money minus()
+- Exercise 102 week 6
+- Exercise 105 week 6
+
 Week 3
 - method
 - String method (length, isEmpty, indexOf, substring)
@@ -57,3 +62,35 @@ Week 5
     private ArrayList<Person> members;
 - Method returns an object
 - Comparing date using custom MyDate object
+
+Week 6
+- immutable. Use 'final' word. Value can not be changed
+    Exercise 95 money.
+        add() method create a new money object that represents the sum of the originals
+        minus() difficult
+    Character strings are immutable
+- Array
+    size of the array (the amount of cells in an array) cannot be changed
+    int[] numbers, String[], double[]
+    The index tells the position of the cell in the array. First is 0
+        System.out.println(numbers[0])
+    Iteration of an array
+        for (int i = 0; i < numbers.length; i++ ) {
+            System.out.println(numbers[i]); }
+    Creating a new array
+        int[] array = {5, 1, 3, 4, 2};
+        int[] values = new int[amountOfValues]; //amountOfValues variable = size of array
+    Copy an array
+        int[] copied = copy(original);
+- Blocks
+    { } variables defined within it only exist within it. variable outside can be used and manipulated
+- Nested loop, Loop inside loop
+- To static or not to static?
+    object state-handling / variable manipulation methods should be defined as normal object methods
+    static method/variable doesn't belong to any object. Doesn't work with this.[variable/method]
+- Array Sorting, selection sorting
+    without any help method or array list
+- Array search, Binary search
+    look for cells by always halving the inspected area
+
+
